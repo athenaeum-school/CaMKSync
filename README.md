@@ -1,6 +1,8 @@
 CaMKSync - LTP
 =================
 
+![image](StrikingImage-press-release-450ppi-7in.png)
+
 趣旨
 --------------
 CaMKSyncはUnityMolをベースにして
