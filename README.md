@@ -1,8 +1,6 @@
 CaMKSync - LTP
 =================
 
-![image](StrikingImage-press-release-450ppi-7in.png)
-
 趣旨
 --------------
 CaMKSyncはUnityMolをベースにして
@@ -32,6 +30,11 @@ conformationやプロテインへのバインディングはNP-Complete（完全
 * 生物の行動パターンなどをプログラミングする
 
 等の応用が考えられます。
+
+CaMKIIプロテインキナーゼとMicrotubleのバインディングの例
+--------------
+http://www.newswise.com/articles/scientists-claim-brain-memory-code-cracked
+![image](StrikingImage-press-release-450ppi-7in.png)
 
 
 $Id: README 22 2009-10-21 21:37:11Z baaden $
