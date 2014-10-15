@@ -31,7 +31,7 @@ conformationやプロテインへのバインディングはNP-Complete（完全
 
 等の応用が考えられます。
 
-CaMKIIプロテインキナーゼとMicrotubleのバインディングの例
+CaMKIIプロテインキナーゼとMicrotubuleのバインディングの例
 --------------
 http://www.newswise.com/articles/scientists-claim-brain-memory-code-cracked
 ![image](StrikingImage-press-release-450ppi-7in.png)
