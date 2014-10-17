@@ -31,6 +31,17 @@ conformationやプロテインへのバインディングはNP-Complete（完全
 
 等の応用が考えられます。
 
+参考資料
+--------------
+# http://ja.wikipedia.org/wiki/Foldit
+# http://fold.it/portal/
+# http://www.nature.com/nrn/journal/v3/n3/full/nrn753.html
+# http://www.molecularbrain.com/content/6/1/10
+# http://www.cell.com/biophysj/abstract/S0006-3495%2814%2900124-6
+# http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.0030124
+# http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1002421
+# http://www.sciencedirect.com/science/article/pii/S0361923010002571
+
 CaMKIIプロテインキナーゼとMicrotubuleのバインディングの例
 --------------
 http://www.newswise.com/articles/scientists-claim-brain-memory-code-cracked
