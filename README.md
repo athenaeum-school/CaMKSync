@@ -31,6 +31,11 @@ conformationやプロテインへのバインディングはNP-Complete（完全
 
 等の応用が考えられます。
 
+バインディングの例
+--------------
+
+* https://www.youtube.com/watch?v=GLKhRBqHaBQ
+
 参考資料
 --------------
 * http://ja.wikipedia.org/wiki/Foldit
