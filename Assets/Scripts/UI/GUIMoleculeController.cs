@@ -207,8 +207,8 @@ namespace UI
 		public	static float rayon = 1.0f;
 		public	static float linkscale = 1.0f;
 		public  static float depthfactor = -1.0f;
-		public	static float drag = 0.6f;
-		public	static float spring = 5;
+		public	static float drag = 125.6f;
+		public	static float spring = 25;
 		
 		
 //Electric field line symbol radius

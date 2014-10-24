@@ -82,7 +82,7 @@ public class BallUpdateHB : BallUpdate {
 
 	public static float maxV = 0;
 
-	public static float drag=0.6f;
+	public static float drag=25.0f;
 	public static float spring=5;
 	public static Color EnergyGrayColor=Color.black;
 
@@ -224,6 +224,7 @@ public class BallUpdateHB : BallUpdate {
 			GetComponent<Rigidbody>().drag=drag;
 			
 			GetComponent<SpringJoint>().spring=spring;
+			GetComponent<SpringJoint>().maxDistance = 0.5f;
 
 			float v = GetComponent<Rigidbody>().velocity.magnitude;
 

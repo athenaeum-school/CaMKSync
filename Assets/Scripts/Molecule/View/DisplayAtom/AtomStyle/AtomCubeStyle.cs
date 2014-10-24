@@ -413,7 +413,7 @@ namespace Molecule.View.DisplayAtom
 								vl=(Vector3)BlockCenter[i][0];
 							
 							// Debug.Log(vl);
-								
+								Debug.Log ("Instantiate @ AtomCubeStyle DisplayAtomMethodByCube()");
 								o=(GameObject)MonoBehaviour.Instantiate(Resources.Load("transparentcube"),vl,new Quaternion(0f,0f,0f,0f));
 							
 								o.transform.localScale = (Vector3)BlockScale[i][0];
@@ -434,6 +434,7 @@ namespace Molecule.View.DisplayAtom
 					//16250 atoms every particle system//////////////////////////////////////////////////////////////////////////////				
 					int particlelimit=UnityParticleLimit;//limited to 16250
 					int groupcount=MoleculeModel.p.Length/particlelimit;
+					Debug.Log ("Create Particle Manager + Particle Effect + SpawnEffect");
 					if(groupcount>=1)
 					{
 						for(int i=0;i<groupcount+1;i++)
@@ -1194,7 +1195,8 @@ namespace Molecule.View.DisplayAtom
 			GameObject Atom;
 			float[]  fLocation=atomLocationalist[start] as float[];
 			Vector3 location=new Vector3(fLocation[0],fLocation[1],fLocation[2]);
-			UnityEngine.Object o;				
+			UnityEngine.Object o;
+			Debug.Log ("Instantiate @ AtomCubeStyle");
 			o=MonoBehaviour.Instantiate(Resources.Load("HBspriteplane"),location,new Quaternion(0f,0f,0f,0f));		
 			Atom=(GameObject)o;
 			MoleculeModel.atoms.Add(Atom);		

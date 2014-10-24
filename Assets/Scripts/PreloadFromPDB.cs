@@ -109,8 +109,8 @@ public class PreloadFromPDB : MonoBehaviour {
 		}
 		Debug.Log(www.error);
 		pdb_progress = 1.0f;
-		UIData.atomtype = UIData.AtomType.particleball;
-		UIData.bondtype = UIData.BondType.nobond;
+		UIData.atomtype = UIData.AtomType.hyperball;
+		UIData.bondtype = UIData.BondType.hyperstick;
 		GUIMoleculeController.menuOpen_show=false;
 		GUIMoleculeController.menuAtom_show=true;
 		SendMessage("Display",SendMessageOptions.DontRequireReceiver);	
