@@ -35,6 +35,7 @@ conformationやプロテインへのバインディングはNP-Complete（完全
 --------------
 
 * https://www.youtube.com/watch?v=GLKhRBqHaBQ
+* https://www.youtube.com/watch?v=_EvS2jCgdkU
 
 参考資料
 --------------
