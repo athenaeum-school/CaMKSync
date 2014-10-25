@@ -223,8 +223,8 @@ public class BallUpdateHB : BallUpdate {
 		{
 			GetComponent<Rigidbody>().drag=drag;
 			
-			GetComponent<SpringJoint>().spring=spring;
-			GetComponent<SpringJoint>().maxDistance = 0.5f;
+			//GetComponent<ConfigurableJoint>().spring=spring;
+			//GetComponent<ConfigurableJoint>().maxDistance = 0.5f;
 
 			float v = GetComponent<Rigidbody>().velocity.magnitude;
 

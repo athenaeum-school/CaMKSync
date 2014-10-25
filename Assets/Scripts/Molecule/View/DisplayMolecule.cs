@@ -655,8 +655,8 @@ namespace Molecule.View
 			{
 				foreach(GameObject box in MoleculeModel.Ces)
 				{
-					if(box&&box.GetComponent <SpringJoint>())
-						Object.Destroy (box.GetComponent <SpringJoint>());
+					if(box&&box.GetComponent <ConfigurableJoint>())
+						Object.Destroy (box.GetComponent <ConfigurableJoint>());
 					if(box&&box.GetComponent <Rigidbody>())
 						Object.Destroy (box.GetComponent <Rigidbody>());
 					
@@ -668,8 +668,8 @@ namespace Molecule.View
 				foreach(GameObject box in MoleculeModel.Nes)
 				{
 					
-					if(box&&box.GetComponent <SpringJoint>())
-						Object.Destroy (box.GetComponent <SpringJoint>());
+					if(box&&box.GetComponent <ConfigurableJoint>())
+						Object.Destroy (box.GetComponent <ConfigurableJoint>());
 					if(box&&box.GetComponent <Rigidbody>())
 						Object.Destroy (box.GetComponent <Rigidbody>());
 				}
@@ -679,8 +679,8 @@ namespace Molecule.View
 			{
 				foreach(GameObject box in MoleculeModel.Oes)
 				{
-					if(box&&box.GetComponent <SpringJoint>())
-						Object.Destroy (box.GetComponent <SpringJoint>());
+					if(box&&box.GetComponent <ConfigurableJoint>())
+						Object.Destroy (box.GetComponent <ConfigurableJoint>());
 					if(box&&box.GetComponent <Rigidbody>())
 						Object.Destroy (box.GetComponent <Rigidbody>());
 				}
@@ -691,8 +691,8 @@ namespace Molecule.View
 				foreach(GameObject box in MoleculeModel.Ses)
 				{
 
-					if(box&&box.GetComponent <SpringJoint>())
-						Object.Destroy (box.GetComponent <SpringJoint>());
+					if(box&&box.GetComponent <ConfigurableJoint>())
+						Object.Destroy (box.GetComponent <ConfigurableJoint>());
 					if(box&&box.GetComponent <Rigidbody>())
 						Object.Destroy (box.GetComponent <Rigidbody>());
 				}
@@ -702,8 +702,8 @@ namespace Molecule.View
 			{
 				foreach(GameObject box in MoleculeModel.Pes)
 				{
-					if(box&&box.GetComponent <SpringJoint>())
-						Object.Destroy (box.GetComponent <SpringJoint>());
+					if(box&&box.GetComponent <ConfigurableJoint>())
+						Object.Destroy (box.GetComponent <ConfigurableJoint>());
 					if(box&&box.GetComponent <Rigidbody>())
 						Object.Destroy (box.GetComponent <Rigidbody>());
 				}
@@ -712,8 +712,8 @@ namespace Molecule.View
 			{
 				foreach(GameObject box in MoleculeModel.Hes)
 				{
-					if(box&&box.GetComponent <SpringJoint>())
-						Object.Destroy (box.GetComponent <SpringJoint>());
+					if(box&&box.GetComponent <ConfigurableJoint>())
+						Object.Destroy (box.GetComponent <ConfigurableJoint>());
 					if(box&&box.GetComponent <Rigidbody>())
 						Object.Destroy (box.GetComponent <Rigidbody>());
 				}
@@ -723,8 +723,8 @@ namespace Molecule.View
 			{
 				foreach(GameObject box in MoleculeModel.NOes)
 				{
-					if(box&&box.GetComponent <SpringJoint>())
-						Object.Destroy (box.GetComponent <SpringJoint>());
+					if(box&&box.GetComponent <ConfigurableJoint>())
+						Object.Destroy (box.GetComponent <ConfigurableJoint>());
 					if(box&&box.GetComponent <Rigidbody>())
 						Object.Destroy (box.GetComponent <Rigidbody>());
 				}
@@ -746,12 +746,12 @@ namespace Molecule.View
 						box.AddComponent<Rigidbody>();
     	   				box.rigidbody.useGravity = false;
     	   				box.rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
-    	   				box.GetComponent<Rigidbody>().drag = 0.6f;
+    	   				box.GetComponent<Rigidbody>().drag = 10.6f;
 					}
-					if(box&&box.GetComponent <SpringJoint>()==null)
+					if(box&&box.GetComponent <ConfigurableJoint>()==null)
 					{
-    	   				box.AddComponent<SpringJoint>();
-						box.GetComponent<SpringJoint>().spring = 5;
+    	   				box.AddComponent<ConfigurableJoint>();
+						//box.GetComponent<ConfigurableJoint>().spring = 5;
 					}
 				}
 			}
@@ -766,12 +766,12 @@ namespace Molecule.View
 						box.AddComponent<Rigidbody>();
     	   				box.rigidbody.useGravity = false;
     	   				box.rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
-    	   				box.GetComponent<Rigidbody>().drag = 0.6f;
+    	   				box.GetComponent<Rigidbody>().drag = 10.6f;
 					}
-					if(box&&box.GetComponent <SpringJoint>()==null)
+					if(box&&box.GetComponent <ConfigurableJoint>()==null)
 					{
-    	   				box.AddComponent<SpringJoint>();
-						box.GetComponent<SpringJoint>().spring = 5;
+    	   				box.AddComponent<ConfigurableJoint>();
+						//box.GetComponent<ConfigurableJoint>().spring = 5;
 					}
 				}
 			}
@@ -786,12 +786,12 @@ namespace Molecule.View
 						box.AddComponent<Rigidbody>();
     	   				box.rigidbody.useGravity = false;
     	   				box.rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
-    	   				box.GetComponent<Rigidbody>().drag = 0.6f;
+    	   				box.GetComponent<Rigidbody>().drag = 10.6f;
 					}
-					if(box&&box.GetComponent <SpringJoint>()==null)
+					if(box&&box.GetComponent <ConfigurableJoint>()==null)
 					{
-    	   				box.AddComponent<SpringJoint>();
-						box.GetComponent<SpringJoint>().spring = 5;
+    	   				box.AddComponent<ConfigurableJoint>();
+						//box.GetComponent<ConfigurableJoint>().spring = 5;
 					}
 				}
 			}
@@ -806,12 +806,12 @@ namespace Molecule.View
 						box.AddComponent<Rigidbody>();
     	   				box.rigidbody.useGravity = false;
     	   				box.rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
-    	   				box.GetComponent<Rigidbody>().drag = 0.6f;
+    	   				box.GetComponent<Rigidbody>().drag = 10.6f;
 					}
-					if(box&&box.GetComponent <SpringJoint>()==null)
+					if(box&&box.GetComponent <ConfigurableJoint>()==null)
 					{
-    	   				box.AddComponent<SpringJoint>();
-						box.GetComponent<SpringJoint>().spring = 5;
+    	   				box.AddComponent<ConfigurableJoint>();
+						//box.GetComponent<ConfigurableJoint>().spring = 5;
 					}
 				}
 			}
@@ -826,12 +826,12 @@ namespace Molecule.View
 						box.AddComponent<Rigidbody>();
     	   				box.rigidbody.useGravity = false;
     	   				box.rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
-    	   				box.GetComponent<Rigidbody>().drag = 0.6f;
+    	   				box.GetComponent<Rigidbody>().drag = 10.6f;
 					}
-					if(box&&box.GetComponent <SpringJoint>()==null)
+					if(box&&box.GetComponent <ConfigurableJoint>()==null)
 					{
-    	   				box.AddComponent<SpringJoint>();
-						box.GetComponent<SpringJoint>().spring = 5;
+    	   				box.AddComponent<ConfigurableJoint>();
+						//box.GetComponent<ConfigurableJoint>().spring = 5;
 					}
 				}
 			}
@@ -845,12 +845,12 @@ namespace Molecule.View
 						box.AddComponent<Rigidbody>();
     	   				box.rigidbody.useGravity = false;
     	   				box.rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
-    	   				box.GetComponent<Rigidbody>().drag = 0.6f;
+    	   				box.GetComponent<Rigidbody>().drag = 10.6f;
 					}
-					if(box&&box.GetComponent <SpringJoint>()==null)
+					if(box&&box.GetComponent <ConfigurableJoint>()==null)
 					{
-    	   				box.AddComponent<SpringJoint>();
-						box.GetComponent<SpringJoint>().spring = 5;
+    	   				box.AddComponent<ConfigurableJoint>();
+						//box.GetComponent<ConfigurableJoint>().spring = 5;
 					}
 				}
 			}
@@ -865,12 +865,12 @@ namespace Molecule.View
 						box.AddComponent<Rigidbody>();
     	   				box.rigidbody.useGravity = false;
     	   				box.rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
-    	   				box.GetComponent<Rigidbody>().drag = 0.6f;
+    	   				box.GetComponent<Rigidbody>().drag = 10.6f;
 					}
-					if(box&&box.GetComponent <SpringJoint>()==null)
+					if(box&&box.GetComponent <ConfigurableJoint>()==null)
 					{
-    	   				box.AddComponent<SpringJoint>();
-						box.GetComponent<SpringJoint>().spring = 5;
+    	   				box.AddComponent<ConfigurableJoint>();
+						//box.GetComponent<>().spring = 5;
 					}
 				}
 			}

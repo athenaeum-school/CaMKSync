@@ -802,7 +802,7 @@ namespace Molecule.View.DisplayAtom
 			Atom.renderer.material.SetColor("_Color", comp.atomcolor);
 
 //			Projector proj = Atom.AddComponent<Projector>();
-			Atom.AddComponent<Projector>();
+			//Atom.AddComponent<Projector>();
 			
 			comp.enabled = true;	
 
@@ -968,7 +968,7 @@ namespace Molecule.View.DisplayAtom
 				comp.number=order;
 				comp.z=(float)(fLocation[2]);
 //				Projector proj = Atom.AddComponent<Projector>();
-				Atom.AddComponent<Projector>();
+				//Atom.AddComponent<Projector>();
 				if(UI.GUIDisplay.file_extension=="xgmml")comp.xgmml=true;
 				comp.enabled = true;		
 				switch(iType)
