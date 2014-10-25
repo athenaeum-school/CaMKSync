@@ -223,7 +223,9 @@ public class BallUpdateHB : BallUpdate {
 		{
 			GetComponent<Rigidbody>().drag=drag;
 			
-			//GetComponent<ConfigurableJoint>().spring=spring;
+			GetComponent<ConfigurableJoint>().xMotion = ConfigurableJointMotion.Locked;
+			GetComponent<ConfigurableJoint>().yMotion = ConfigurableJointMotion.Locked;
+			GetComponent<ConfigurableJoint>().zMotion = ConfigurableJointMotion.Locked;
 			//GetComponent<ConfigurableJoint>().maxDistance = 0.5f;
 
 			float v = GetComponent<Rigidbody>().velocity.magnitude;
